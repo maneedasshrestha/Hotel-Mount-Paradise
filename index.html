@@ -12,26 +12,10 @@
   <!-- media query for mobile devices -->
 
   <style>
-    @media (max-width: 576px) {
-      .addmargin {
-        position: absolute;
-        bottom: 50px;
-        text-align: left;
-        margin-right: 10px;
-      }
-
-      .cover-addmargin {
-        background-position: right;
-      }
-
-      .display-1 {
-        font-size: 2.5rem;
-      }
-    }
-
+   
     /* custom css for green underline */
     .custom-width {
-      width: 15rem;
+      width: 18rem;
     }
 
     .custom-height {
@@ -62,13 +46,54 @@
       background-color: #006A4E !important;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     }
+
+    .hotel-mount-paradise {
+      width: 47rem;
+    }
+
+    .accomodation {
+      width: 24rem;
+    }
+
+    .awards {
+      width: 10rem;
+    }
+    @media (max-width: 576px) {
+      .addmargin {
+        position: absolute;
+        bottom: 50px;
+        text-align: left;
+        margin-right: 10px;
+      }
+
+      .cover-addmargin {
+        background-position: right;
+      }
+
+      .display-1 {
+        font-size: 2.5rem;
+      }
+
+      .hotel-mount-paradise {
+        width: 20rem;
+      }
+
+      .accomodation {
+        width: 16rem;
+      }
+
+      .awards {
+        width: 7rem;
+      }
+    }
+
   </style>
 </head>
 
 <body>
   <!-- MAIN HOME PAGE -->
   <div id="home-page" class="cover-addmargin"
-    style="background-image: url('assets/coverphoto.jpg'); background-size: cover; background-position: center; width: 100%; height: 100vh;">
+    style="background-image: url('assets/img-Photoroom.png'); background-size: cover; background-position: center; width: 100%; height: 100vh;">
     &nbsp;
 
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top" aria-label="Offcanvas navbar large">
@@ -102,11 +127,9 @@
               <li class="nav-item">
                 <a class="nav-link active mx-3 fw-bold my-2" aria-current="page" href="#fourth-page">Awards</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active mx-3 fw-bold my-2" aria-current="page" href="#fifth-page">Contact us</a>
-              </li>
             </ul>
-            <button class="btn btn-success mx-3 fw-bold my-2" type="submit">BOOK HERE</button>
+            <a href="#fifth-page"><button class="btn btn-success mx-3 fw-bold my-2" type="submit">Contact
+                Us</button></a>
           </div>
         </div>
       </div>
@@ -131,7 +154,7 @@
     <div class="container text-center mb-4">
       <p class="text-secondary"><strong>Get To Know More</strong></p>
       <h1 class="display-5 fw-bold" style="color: #32de84;">Hotel Mount Paradise, Nagarkot </h1>
-      <div class="custom-width custom-height bg-custom-green mx-auto mt-2"></div>
+      <div class="custom-width custom-height bg-custom-green mx-auto mt-2 hotel-mount-paradise"></div>
     </div>
     <div class="container-fluid" style="margin-top: 0;">
       <div class="row align-items-center p-3">
@@ -182,21 +205,18 @@
       <div class="text-center mb-4 p-3">
         <p class="text-secondary" style="margin-top: 3rem;"><strong>We Offer</strong></p>
         <h1 class="display-6 fw-bold" style="color: #32de84; ">ACCOMMODATION</h1>
-        <div class="custom-width custom-height bg-custom-green mx-auto mt-2"></div>
+        <div class="custom-width custom-height bg-custom-green mx-auto mt-2 accomodation"></div>
       </div>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100">
             <img src="assets/Rooms/family room with balcony.jpg" class="card-img-top" alt="...">
             <div class="card-body text-center">
-              <h5 class="card-title" style="color: #2aa364;">Family Room with balcony</h5>
+              <h5 class="card-title" style="color: #2aa364;">Family Room with A Balcony</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
                 additional
                 content. This content is a little bit longer.</p>
               <div class="custom-width custom-height bg-custom-green mx-auto mt-2"></div>
-              <div>
-                <a href="#" class="btn btn-success" style="margin-top: 1rem;">Book Now</a>
-              </div>
             </div>
           </div>
         </div>
@@ -209,9 +229,7 @@
                 additional
                 content. This content is a little bit longer.</p>
               <div class="custom-width custom-height bg-custom-green mx-auto mt-2"></div>
-              <div>
-                <a href="#" class="btn btn-success" style="margin-top: 1rem;">Book Now</a>
-              </div>
+
             </div>
           </div>
         </div>
@@ -224,9 +242,7 @@
                 additional
                 content. This content is a little bit longer.</p>
               <div class="custom-width custom-height bg-custom-green mx-auto mt-2"></div>
-              <div>
-                <a href="#" class="btn btn-success" style="margin-top: 1rem;">Book Now</a>
-              </div>
+
             </div>
           </div>
         </div>
@@ -239,9 +255,7 @@
                 additional
                 content. This content is a little bit longer.</p>
               <div class="custom-width custom-height bg-custom-green mx-auto mt-2"></div>
-              <div>
-                <a href="#" class="btn btn-success" style="margin-top: 1rem;">Book Now</a>
-              </div>
+
             </div>
           </div>
         </div>
@@ -249,14 +263,12 @@
           <div class="card h-100">
             <img src="assets/Rooms/standard twin room.jpg" class="card-img-top" alt="...">
             <div class="card-body text-center">
-              <h5 class="card-title" style="color: #2aa364;">Standard Twin Room</h5>
+              <h5 class="card-title" style="color: #2aa364;">Standard Double Room</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
                 additional
                 content. This content is a little bit longer.</p>
               <div class="custom-width custom-height bg-custom-green mx-auto mt-2"></div>
-              <div>
-                <a href="#" class="btn btn-success" style="margin-top: 1rem;">Book Now</a>
-              </div>
+
             </div>
           </div>
         </div>
@@ -264,14 +276,12 @@
           <div class="card h-100">
             <img src="assets/Rooms/budget double room.jpg" class="card-img-top" alt="...">
             <div class="card-body text-center">
-              <h5 class="card-title" style="color: #2aa364;">Budget Double Room</h5>
+              <h5 class="card-title" style="color: #2aa364;">Budget Single Room</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
                 additional
                 content. This content is a little bit longer.</p>
               <div class="custom-width custom-height bg-custom-green mx-auto mt-2"></div>
-              <div>
-                <a href="#" class="btn btn-success" style="margin-top: 1rem;">Book Now</a>
-              </div>
+
             </div>
           </div>
         </div>
@@ -286,7 +296,7 @@
     <div class="container text-center mb-4">
       <p class="text-secondary"><strong>Our Achievements</strong></p>
       <h1 class="display-5 fw-bold" style="color: #32de84;">Awards</h1>
-      <div class="custom-width custom-height bg-custom-green mx-auto mt-2"></div>
+      <div class="custom-width custom-height bg-custom-green mx-auto mt-2 awards"></div>
     </div>
     <div class="container">
       <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -377,10 +387,10 @@
     <div class=" text-white p-4 col-md-4" style="background-color:#006A4E;">
       <h2 class="h1 mb-4 fw-bold">GETTING <br>HERE</h2>
       <div class="custom-line "></div><br>
-      <p class="mb-2 fw-bold ">Hotel Mount Paradise</p>
+      <p class="mb-1 fw-bold " style="font-size: 23px;">Hotel Mount Paradise</p>
       <p class="mb-2"> Nagarkot ,windy Hill Near Army combat college, 44812</p>
       <p class="mb-2"> Bhaktapur, Nepal</p><br>
-      <p class="mb-2">+977 9818681791</p><br>
+      <p class="mb-2">+977 9818681791 <br>+977 1-6680007</p><br>
       <p class="mb-4">hotelmountparadise@gmail.com</p>
       <div class="d-flex mt-2">
         <a href="https://wa.link/17jon1" aria-label="Whatsapp" class="text-muted mx-2">
@@ -407,7 +417,7 @@
   <div class=" text-white p-4" style="background-color: #006A4E; position: relative;">
     <div class="text-center mb-4"><strong>
         <p class="small">NAGARKOT, BHAKTAPUR, NEPAL</p>
-        <p class="small">977-01-4790100 hotelmountparadise@gmail.com</p>
+        <p class="small">977-9818681791 +977 1-6680007 <br>hotelmountparadise@gmail.com</p>
       </strong>
     </div>
     <div class="text-center mb-4">
